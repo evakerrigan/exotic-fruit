@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/exotic-fruit/static/css/main.de3d9d56.css",
+    "main.js": "/exotic-fruit/static/js/main.a39ded09.js",
+    "index.html": "/exotic-fruit/index.html",
+    "main.de3d9d56.css.map": "/exotic-fruit/static/css/main.de3d9d56.css.map",
+    "main.a39ded09.js.map": "/exotic-fruit/static/js/main.a39ded09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de3d9d56.css",
+    "static/js/main.a39ded09.js"
+  ]
+}
