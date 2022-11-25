@@ -89,5 +89,61 @@
     "title": "Глаз дракона",
     "url": "image/15.png",
     "price": "2"
+  },
+  {
+    "id": "16",
+    "title": "Аки",
+    "url": "image/16.png",
+    "price": "2"
+  },
+  {
+    "id": "17",
+    "title": "Гуава",
+    "url": "image/17.png",
+    "price": "2"
+  },
+  {
+    "id": "18",
+    "title": "Джаботикаба",
+    "url": "image/18.png",
+    "price": "2"
+  },
+ 
+  {
+    "id": "19",
+    "title": "Драконий фрукт",
+    "url": "image/19.png",
+    "price": "2"
+  },
+  {
+    "id": "20",
+    "title": "Змеиный фрукт",
+    "url": "image/20.png",
+    "price": "2"
+  },
+  {
+    "id": "21",
+    "title": "Какао",
+    "url": "image/21.png",
+    "price": "2"
+  },
+  {
+    "id": "22",
+    "title": "Каменное яблоко",
+    "url": "image/22.png",
+    "price": "2"
+  },
+  {
+    "id": "23",
+    "title": "Канталупа",
+    "url": "image/23.png",
+    "price": "2"
+  },
+ 
+  {
+    "id": "24",
+    "title": "Кивано",
+    "url": "image/24.png",
+    "price": "2"
   }
 ]

@@ -1,7 +1,23 @@
 .active {
-  color: red;
-  background-color: aquamarine;
+  /* color: red; */
+  /* background-color: aquamarine; */
+  color: #000;
 }
-ul {
-  list-style-type: none;
+.nav-list{
+  display: flex;
+  flex-wrap: no-wrap;
+}
+.nav-item {
+  text-align: center;
+}
+.nav-item a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #8e8e8e;
+}
+.nav-item a:hover {
+  color: #000;
+}
+.nav-item a.active {
+  color: #000;
 }

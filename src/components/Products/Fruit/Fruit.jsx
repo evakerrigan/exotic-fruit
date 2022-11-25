@@ -3,11 +3,11 @@ import './Fruit.css'
 export const FruitItem = ({ product :{title,url}}) => {
   return (
     <div>
-      <div className="fruit-title">{title}</div>
       <img
         className="fruit-image" src={url}
         //  style={{ backgroundImage: `url(${url})` }}
       />
+      <div className="fruit-title">{title}</div>
     </div>
   );
 };

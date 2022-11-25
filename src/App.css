@@ -1,9 +1,14 @@
 .App {
-  text-align: center;
-  max-width: 900px;
+  /* text-align: center; */
+  max-width: 1048px;
   margin: 0 auto;
   background-color: #fcfcfc;
   padding: 0 150px;
   box-sizing: border-box;
 }
-
+.wrapper-app {
+  width: 720px;
+  margin: 0 auto;
+  /* border-left: 1px solid #555;
+  border-right: 1px solid #555; */
+}
