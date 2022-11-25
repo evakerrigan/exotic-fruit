@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/exotic-fruit/static/css/main.b66773b3.css",
-    "main.js": "/exotic-fruit/static/js/main.00d2bbb5.js",
+    "main.css": "/exotic-fruit/static/css/main.5f70ad68.css",
+    "main.js": "/exotic-fruit/static/js/main.96b3121c.js",
     "index.html": "/exotic-fruit/index.html",
-    "main.b66773b3.css.map": "/exotic-fruit/static/css/main.b66773b3.css.map",
-    "main.00d2bbb5.js.map": "/exotic-fruit/static/js/main.00d2bbb5.js.map"
+    "main.5f70ad68.css.map": "/exotic-fruit/static/css/main.5f70ad68.css.map",
+    "main.96b3121c.js.map": "/exotic-fruit/static/js/main.96b3121c.js.map"
   },
   "entrypoints": [
-    "static/css/main.b66773b3.css",
-    "static/js/main.00d2bbb5.js"
+    "static/css/main.5f70ad68.css",
+    "static/js/main.96b3121c.js"
   ]
 }
