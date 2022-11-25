@@ -2,123 +2,148 @@
   {
     "id": "1",
     "title": "Карамбола",
-    "url": "image/13.png",
+    "url": "image/1.png",
     "price": "2"
+  },
+  {
+    "id": "2",
+    "title": "Ромбутан",
+    "url": "image/2.png",
+    "price": "1"
   },
   {
     "id": "3",
     "title": "Акебия",
-    "url": "image/1.png",
-    "price": "1"
-  },
-  {
-    "id": "2",
-    "title": "fruit2",
-    "url": "image/2.png",
-    "price": "2"
-  },
-  {
-    "id": "3",
-    "title": "fruit3",
     "url": "image/3.png",
     "price": "2"
   },
   {
     "id": "4",
     "title": "Лонган",
-    "url": "image/18.png",
-    "price": "2"
-  },
-  {
-    "id": "4",
-    "title": "fruit4",
     "url": "image/4.png",
     "price": "2"
   },
   {
     "id": "5",
-    "title": "fruit5",
+    "title": "Манго",
     "url": "image/5.png",
     "price": "2"
   },
   {
     "id": "6",
-    "title": "fruit6",
+    "title": "Кокос",
     "url": "image/6.png",
     "price": "2"
   },
   {
     "id": "7",
-    "title": "fruit7",
+    "title": "Рогатая дыня",
     "url": "image/7.png",
     "price": "2"
   },
   {
     "id": "8",
-    "title": "fruit8",
+    "title": "Мангостан",
     "url": "image/8.png",
     "price": "2"
   },
   {
     "id": "9",
-    "title": "fruit9",
+    "title": "Рука Будды",
     "url": "image/9.png",
     "price": "2"
   },
   {
     "id": "10",
-    "title": "fruit10",
+    "title": "Китайский личи",
     "url": "image/10.png",
     "price": "2"
   },
   {
     "id": "11",
-    "title": "fruit11",
+    "title": "Клубника пайнберри",
     "url": "image/11.png",
     "price": "2"
   },
   {
     "id": "12",
-    "title": "fruit12",
+    "title": "Романеску",
     "url": "image/12.png",
+    "price": "2"
+  },
+  {
+    "id": "13",
+    "title": "Джекфрут",
+    "url": "image/13.png",
+    "price": "2"
+  },
+  {
+    "id": "14",
+    "title": "Аннато",
+    "url": "image/14.png",
     "price": "2"
   },
 
   {
-    "id": "14",
-    "title": "fruit14",
-    "url": "image/14.png",
-    "price": "2"
-  },
-  {
     "id": "15",
-    "title": "fruit15",
+    "title": "Глаз дракона",
     "url": "image/15.png",
     "price": "2"
   },
   {
     "id": "16",
-    "title": "fruit16",
+    "title": "Аки",
     "url": "image/16.png",
     "price": "2"
   },
   {
     "id": "17",
-    "title": "fruit17",
+    "title": "Гуава",
     "url": "image/17.png",
+    "price": "2"
+  },
+  {
+    "id": "18",
+    "title": "Джаботикаба",
+    "url": "image/18.png",
     "price": "2"
   },
  
   {
     "id": "19",
-    "title": "fruit19",
+    "title": "Драконий фрукт",
     "url": "image/19.png",
     "price": "2"
   },
   {
     "id": "20",
-    "title": "fruit20",
+    "title": "Змеиный фрукт",
     "url": "image/20.png",
+    "price": "2"
+  },
+  {
+    "id": "21",
+    "title": "Какао",
+    "url": "image/21.png",
+    "price": "2"
+  },
+  {
+    "id": "22",
+    "title": "Каменное яблоко",
+    "url": "image/22.png",
+    "price": "2"
+  },
+  {
+    "id": "23",
+    "title": "Канталупа",
+    "url": "image/23.png",
+    "price": "2"
+  },
+ 
+  {
+    "id": "24",
+    "title": "Кивано",
+    "url": "image/24.png",
     "price": "2"
   }
 ]
