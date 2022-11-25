@@ -1,6 +1,6 @@
 .fruit-list {
   display: flex;
-  width: 50vw;
+  /* width: 50vw; */
   margin: 0 auto;
   flex-wrap: wrap;
   justify-content: space-between;

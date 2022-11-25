@@ -1,4 +1,9 @@
 .App {
   text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fcfcfc;
+  padding: 0 150px;
+  box-sizing: border-box;
 }
 
