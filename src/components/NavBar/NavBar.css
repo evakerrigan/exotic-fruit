@@ -12,6 +12,7 @@
   display: flex;
   flex-wrap: nowrap;
   margin: 10px 0 10px 0;
+  justify-content: space-between;
 }
 .nav-item {
   text-align: center;
@@ -27,4 +28,14 @@
 .nav-item a.active {
   color: #000;
   font-weight: 500;
+}
+@media (max-width: 750px) {
+  .nav-item a {
+    font-size: 10px;
+  }
+}
+@media (max-width: 650px) {
+  .nav-title-none {
+    display: none;
+  }
 }

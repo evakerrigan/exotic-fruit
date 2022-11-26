@@ -7,22 +7,22 @@ export const NavBar = () => {
     <nav className="nav">
       <ul className="nav-list">
         <li className="nav-item">
-          <NavLink to="">Экзотические ФРУКТЫ</NavLink>
+          <NavLink to=""><span className="nav-title-none">Экзотические</span> ФРУКТЫ</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/juice">Экзотические СОКИ</NavLink>
+          <NavLink to="/juice"><span className="nav-title-none">Экзотические</span> СОКИ</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/wine">Аюрведические ВИНА</NavLink>
+          <NavLink to="/wine"><span className="nav-title-none">Аюрведические</span> ВИНА</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/smoothies">Экзотические СМУЗИ</NavLink>
+          <NavLink to="/smoothies"><span className="nav-title-none">Экзотические</span> СМУЗИ</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/salad">Экзотические САЛАТЫ</NavLink>
+          <NavLink to="/salad"><span className="nav-title-none">Экзотические</span> САЛАТЫ</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/jam">Экзотические ДЖЕМЫ</NavLink>
+          <NavLink to="/jam"><span className="nav-title-none">Экзотические</span> ДЖЕМЫ</NavLink>
         </li>
       </ul>
     </nav>
