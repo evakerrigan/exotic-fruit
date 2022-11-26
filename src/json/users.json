@@ -1,12 +1,14 @@
 [
   {
-    "login": "login",
+    "login": "user",
     "password": "password",
-    "name": "name"
+    "name": "name",
+    "avatarUrl": ""
   },
   {
-    "login": "login2",
+    "login": "user2",
     "password": "password2",
-    "name": "name2"
+    "name": "name2",
+    "avatarUrl": ""
   }
 ]

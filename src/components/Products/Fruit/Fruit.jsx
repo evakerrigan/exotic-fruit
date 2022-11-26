@@ -1,6 +1,6 @@
 import './Fruit.css'
 
-export const FruitItem = ({ product :{title,url}}) => {
+export const FruitItem = ({ product :{title, url}}) => {
   return (
     <div>
       <img
