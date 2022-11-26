@@ -29,3 +29,8 @@
 .fruit-item:hover .fruit-title {
   color: #000;
 }
+@media (max-width: 500px) {
+  .fruit-item {
+    width: 45%;
+  }
+}

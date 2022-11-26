@@ -37,3 +37,16 @@
     font-size: 10px;
 }
 }
+@media (max-width: 500px) {
+  .navpage {
+    padding: 1px 0 0 0;
+  }
+  .navpage-list {
+    flex-wrap: wrap;
+    justify-content: end;
+    width: 150px;
+  }
+  .navpage-item:nth-child(2n) {
+    margin: 0 0 0 8px;
+  }
+}
