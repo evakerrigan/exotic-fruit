@@ -1,9 +1,5 @@
-import './Autorization.css';
+import "./Autorization.css";
 
 export const Autorization = () => {
-  return (
-
-      <div>Login</div>
-   
-  )
-}
+  return <div className="autorization"></div>;
+};

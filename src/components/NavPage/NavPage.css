@@ -1,0 +1,17 @@
+.navpage-list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.navpage-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #8e8e8e;
+  font-size: 12px;
+  margin: 0 8px;
+}
+.navpage-link:hover {
+  color: #000;
+}
+.navpage-link.active {
+  color: #000;
+}

@@ -6,10 +6,12 @@
 .nav {
   border-top: 1px solid #8e8e8e;
   border-bottom: 1px solid #8e8e8e;
+  margin-bottom: 30px;
 }
 .nav-list{
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
+  margin: 10px 0 10px 0;
 }
 .nav-item {
   text-align: center;

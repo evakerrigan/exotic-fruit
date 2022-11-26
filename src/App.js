@@ -22,8 +22,6 @@ function App() {
         <Header />
         <NavBar />
         {/* <FruitList products={productsData} /> */}
-        <Footer />
-
         <Routes>
           <Route path="" element={<FruitList products={productsData} />} />
           <Route path="juice" element={<JuiceList />} />
@@ -32,6 +30,7 @@ function App() {
           <Route path="salad" element={<SaladList />} />
           <Route path="jam" element={<JamList />} />
         </Routes>
+        <Footer />
       </div>
     </div>
   );
