@@ -12,13 +12,13 @@ export const Footer = () => {
         </div>
         <div className="footer-social">
           <li className="footer-list">
-            <a href="" target="_blank" className="footer-link facebook"></a>
+            <a href="https://ru-ru.facebook.com" target="_blank" className="footer-link facebook"></a>
           </li>
           <li className="footer-list">
-            <a href="" target="_blank" className="footer-link twitter"></a>
+            <a href="https://twitter.com" target="_blank" className="footer-link twitter"></a>
           </li>
           <li className="footer-list">
-            <a href="" target="_blank" className="footer-link vk"></a>
+            <a href="https://www.instagram.com" target="_blank" className="footer-link vk"></a>
           </li>
         </div>
       </div>

@@ -7,5 +7,8 @@
   cursor: pointer;
 }
 .basket {
+  background-image: url(../../image/icons/backet-grey.png);
+}
+.basket:hover {
   background-image: url(../../image/icons/backet.png);
 }
