@@ -11,8 +11,12 @@ import { JamList } from "./components/Products/Jam/Jam";
 
 import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
-import { Route, Routes } from "react-router-dom";
 import { NavBar } from "./components/NavBar/NavBar";
+import { Delivery } from "./components/Delivery/Delivery";
+import { About } from "./components/About/About";
+import { Contacts } from "./components/Contacts/Contacts";
+
+import { Route, Routes } from "react-router-dom";
 import productsData from "./json/products.json";
 
 function App() {
@@ -21,7 +25,6 @@ function App() {
       <div className="wrapper-app">
         <Header />
         <NavBar />
-        {/* <FruitList products={productsData} /> */}
         <Routes>
           <Route path="" element={<FruitList products={productsData} />} />
           <Route path="juice" element={<JuiceList />} />
@@ -29,6 +32,10 @@ function App() {
           <Route path="smoothies" element={<SmoothiesList />} />
           <Route path="salad" element={<SaladList />} />
           <Route path="jam" element={<JamList />} />
+
+          <Route path="delivery" element={<Delivery />} />
+          <Route path="about" element={<About />} />
+          <Route path="contacts" element={<Contacts />} />
         </Routes>
         <Footer />
       </div>
