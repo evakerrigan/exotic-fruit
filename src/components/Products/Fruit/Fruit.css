@@ -1,21 +1,31 @@
 .fruit-list {
   display: flex;
-  /* width: 50vw; */
   margin: 0 auto;
   flex-wrap: wrap;
   justify-content: space-between;
-  list-style-type: none;  
+  list-style-type: none;
 }
 .fruit-item {
   width: 30%;
   margin: 10px 5px 20px 5px;
 }
+.fruit-item:hover {
+  cursor: pointer;
+}
 .fruit-image {
   width: 100%;
   height: 100%;
+  transition: 1s;
 }
 .fruit-title {
   color: #8e8e8e;
   text-align: center;
   padding: 18px 0 8px 0;
+  transition: 1s;
+}
+.fruit-item:hover .fruit-image {
+  transform: scale(1.1);
+}
+.fruit-item:hover .fruit-title {
+  color: #000;
 }

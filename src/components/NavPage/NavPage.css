@@ -1,3 +1,6 @@
+.navpage {
+  padding: 30px 0 0 0;
+}
 .navpage-list {
   display: flex;
   flex-wrap: nowrap;
