@@ -1,4 +1,4 @@
-# exotic-fruit
+# Exotic fruit
 
 Ссылка на деплой приложения https://evakerrigan.github.io/exotic-fruit
 
