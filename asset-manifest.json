@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/exotic-fruit/static/css/main.320a3e57.css",
-    "main.js": "/exotic-fruit/static/js/main.2fbb2ce4.js",
+    "main.css": "/exotic-fruit/static/css/main.5bddcc25.css",
+    "main.js": "/exotic-fruit/static/js/main.92bb8207.js",
     "static/media/tw.png": "/exotic-fruit/static/media/tw.d5d24d2d897d02779141.png",
     "static/media/vk.png": "/exotic-fruit/static/media/vk.83f900a49e551619b05f.png",
     "static/media/fb.png": "/exotic-fruit/static/media/fb.0de2a9e83543418716dc.png",
     "index.html": "/exotic-fruit/index.html",
-    "main.320a3e57.css.map": "/exotic-fruit/static/css/main.320a3e57.css.map",
-    "main.2fbb2ce4.js.map": "/exotic-fruit/static/js/main.2fbb2ce4.js.map"
+    "main.5bddcc25.css.map": "/exotic-fruit/static/css/main.5bddcc25.css.map",
+    "main.92bb8207.js.map": "/exotic-fruit/static/js/main.92bb8207.js.map"
   },
   "entrypoints": [
-    "static/css/main.320a3e57.css",
-    "static/js/main.2fbb2ce4.js"
+    "static/css/main.5bddcc25.css",
+    "static/js/main.92bb8207.js"
   ]
 }
