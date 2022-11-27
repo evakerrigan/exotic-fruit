@@ -3,12 +3,14 @@
     "login": "user",
     "password": "password",
     "name": "name",
-    "avatarUrl": ""
+    "avatarUrl": "",
+    "basket": {}
   },
   {
     "login": "user2",
     "password": "password2",
     "name": "name2",
-    "avatarUrl": ""
+    "avatarUrl": "",
+    "basket": {}
   }
 ]

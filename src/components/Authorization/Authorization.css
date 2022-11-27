@@ -1,0 +1,67 @@
+.wrapper-authorization {
+  display: flex;
+  margin: 0 20px 0 0;
+}
+.authorization, .authorization-ok {
+  color: #8e8e8e;
+  position: relative;
+}
+.authorization:before, .authorization-ok:before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: -25px;
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.authorization {
+  display: block;
+}
+.authorization:before {
+  background-image: url(../../image/icons/user-grey.png);
+}
+.authorization-ok {
+  display: none;
+}
+.authorization-ok:before {
+  background-image: url(../../image/icons/user.png);
+}
+.authorization-input {
+  text-align: center;
+  font-size: 12px;
+  width: 0px;
+  transition: 1s;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #8e8e8e;
+  padding-left: 0;
+  padding-right: 0;
+}
+.authorization:hover > .authorization-input {
+  width: 100px;
+}
+.authorization-input:placeholder {
+  color: #fff;
+}
+.authorization-input.password {
+  position: absolute;
+  display: none;
+  top: 0px;
+  right: 0px;
+  transition: 1s;
+}
+.authorization-input.password.active-password {
+  top: 20px;
+  display: block;
+}
+.display-none {
+  display: none;
+}
+.display-block {
+  display: block;
+}

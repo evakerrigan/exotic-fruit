@@ -1,5 +1,5 @@
 import "./Header.css";
-import { Autorization } from "../Autorization/Autorization";
+import { Authorization } from "../Authorization/Authorization";
 import { Basket } from "../Basket/Basket";
 import { NavPage } from "../NavPage/NavPage";
 
@@ -15,7 +15,7 @@ export const Header = () => {
       </div>
       <div className="header-right">
         <div className="wrapper-header">
-          <Autorization />
+          <Authorization />
           <Basket />
         </div>
         <NavPage />
