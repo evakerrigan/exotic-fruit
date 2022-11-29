@@ -1,5 +1,5 @@
 import "./Fruit.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 
 export const FruitItem = ({ product: { title, url } }) => {
   return (
@@ -26,5 +26,18 @@ export const FruitList = ({ products }) => {
         </li>
       ))}
     </ul>
+  );
+};
+
+
+export const FruitDetail = ({ products }) => {
+  const {productId} = useParams();
+  console.log("FruitDetail:products:", products);
+
+  const product = products.find(({id}) => id === productId);
+  console.log("product:", product);
+
+  return (
+    <FruitItem product={product} />
   );
 };
