@@ -3,8 +3,8 @@ import "./style/reset.css";
 import "./App.css";
 
 import { FruitList, FruitDetail } from "./components/Products/Fruit/Fruit";
-import { JuiceList } from "./components/Products/Juice/Juice";
-import { WineList } from "./components/Products/Wine/Wine";
+import { CatalogItem } from "./components/Products/CatalogItem/CatalogItem";
+import { CatalogList } from "./components/Products/CatalogList/CatalogList";
 import { SmoothiesList } from "./components/Products/Smoothies/Smoothies";
 import { SaladList } from "./components/Products/Salad/Salad";
 import { JamList } from "./components/Products/Jam/Jam";
@@ -18,6 +18,7 @@ import { Contacts } from "./components/Contacts/Contacts";
 
 import { Route, Routes } from "react-router-dom";
 import productsData from "./json/products.json";
+import categoriesData from "./json/category.json";
 
 function App() {
   return (
@@ -35,11 +36,11 @@ function App() {
             path="products"
             element={<FruitList products={productsData} />}
           />
-          <Route path="juice" element={<JuiceList />} />
-          <Route path="wine" element={<WineList />} />
-          <Route path="smoothies" element={<SmoothiesList />} />
+          <Route path="catalog/:catalogCode" element={<CatalogItem />} />
+          <Route path="catalog" element={<CatalogList categories={categoriesData} />} />
+          {/* <Route path="smoothies" element={<SmoothiesList />} />
           <Route path="salad" element={<SaladList />} />
-          <Route path="jam" element={<JamList />} />
+          <Route path="jam" element={<JamList />} /> */}
 
           <Route path="delivery" element={<Delivery />} />
           <Route path="about" element={<About />} />

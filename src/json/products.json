@@ -1,12 +1,14 @@
 [
   {
     "id": "1",
+    "categoryCode": "fruit",
     "title": "Карамбола",
     "url": "image/products/1.png",
     "price": "2"
   },
   {
     "id": "2",
+    "categoryCode": "fruit",
     "title": "Ромбутан",
     "url": "image/products/2.png",
     "price": "1"

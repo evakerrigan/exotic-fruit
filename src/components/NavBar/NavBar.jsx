@@ -1,12 +1,18 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
+import categoriesData from "../../json/category.json";
 
 export const NavBar = () => {
   return (
     <nav className="nav">
       <ul className="nav-list">
-        <li className="nav-item">
+      {categoriesData.map(({code, name, typeName}) => (
+        <li className="nav-item" key={code}>
+          <NavLink to={`/catalog/${code}`}><span className="nav-title-none">{typeName}</span> {name}</NavLink>
+        </li>
+      ))}
+        {/* <li className="nav-item">
           <NavLink to=""><span className="nav-title-none">Экзотические</span> ФРУКТЫ</NavLink>
         </li>
         <li className="nav-item">
@@ -23,7 +29,7 @@ export const NavBar = () => {
         </li>
         <li className="nav-item">
           <NavLink to="/jam"><span className="nav-title-none">Экзотические</span> ДЖЕМЫ</NavLink>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

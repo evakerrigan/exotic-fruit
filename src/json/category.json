@@ -1,0 +1,32 @@
+[
+  {
+    "code": "fruit",
+    "typeName": "Экзотические",
+    "name": " фрукты"
+  },
+  {
+    "code": "juice",
+    "typeName": "Экзотические",
+    "name": " соки"
+  },
+  {
+    "code": "wine",
+    "typeName": "Аюрведические",
+    "name": " вина"
+  },
+  {
+    "code": "smoothies",
+    "typeName": "Экзотические",
+    "name": " смузи"
+  },
+  {
+    "code": "salad",
+    "typeName": "Экзотические",
+    "name": " салаты"
+  },
+  {
+    "code": "jam",
+    "typeName": "Экзотические",
+    "name": " джемы"
+  }
+]
