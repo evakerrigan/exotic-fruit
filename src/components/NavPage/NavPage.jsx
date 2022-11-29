@@ -6,9 +6,7 @@ export const NavPage = () => {
     <div className="navpage">
       <ul className="navpage-list">
         <li className="navpage-item">
-          <a className="navpage-link" href="">
-            магазин
-          </a>
+          <NavLink to="/">магазин</NavLink>
         </li>
         <li className="navpage-item">
           <NavLink to="/delivery">доставка</NavLink>

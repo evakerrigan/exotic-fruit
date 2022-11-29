@@ -1,10 +1,12 @@
-import './Fruit.css'
+import "./Fruit.css";
+import { NavLink } from "react-router-dom";
 
-export const FruitItem = ({ product :{title, url}}) => {
+export const FruitItem = ({ product: { title, url } }) => {
   return (
     <div>
       <img
-        className="fruit-image" src={url}
+        className="fruit-image"
+        src={url}
         //  style={{ backgroundImage: `url(${url})` }}
       />
       <div className="fruit-title">{title}</div>
@@ -12,13 +14,15 @@ export const FruitItem = ({ product :{title, url}}) => {
   );
 };
 
-export const FruitList = ({products}) => {
+export const FruitList = ({ products }) => {
   console.log("products:", products);
   return (
     <ul className="fruit-list">
       {products.map((product) => (
         <li className="fruit-item" key={product.id}>
-            <FruitItem product={product}/>
+          <NavLink to={`/product/${product.id}`}>
+            <FruitItem product={product} />
+          </NavLink>
         </li>
       ))}
     </ul>

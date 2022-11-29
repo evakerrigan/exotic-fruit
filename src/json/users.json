@@ -3,7 +3,7 @@
     "login": "user",
     "password": "password",
     "name": "name",
-    "avatarUrl": "",
+    "avatarUrl": "image/avatars/user-min.jpg",
     "basket": {}
   },
   {

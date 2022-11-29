@@ -2,92 +2,92 @@
   {
     "id": "1",
     "title": "Карамбола",
-    "url": "image/1.png",
+    "url": "image/products/1.png",
     "price": "2"
   },
   {
     "id": "2",
     "title": "Ромбутан",
-    "url": "image/2.png",
+    "url": "image/products/2.png",
     "price": "1"
   },
   {
     "id": "3",
     "title": "Акебия",
-    "url": "image/3.png",
+    "url": "image/products/3.png",
     "price": "2"
   },
   {
     "id": "4",
     "title": "Лонган",
-    "url": "image/4.png",
+    "url": "image/products/4.png",
     "price": "2"
   },
   {
     "id": "5",
     "title": "Манго",
-    "url": "image/5.png",
+    "url": "image/products/5.png",
     "price": "2"
   },
   {
     "id": "6",
     "title": "Кокос",
-    "url": "image/6.png",
+    "url": "image/products/6.png",
     "price": "2"
   },
   {
     "id": "7",
     "title": "Рогатая дыня",
-    "url": "image/7.png",
+    "url": "image/products/7.png",
     "price": "2"
   },
   {
     "id": "8",
     "title": "Мангостан",
-    "url": "image/8.png",
+    "url": "image/products/8.png",
     "price": "2"
   },
   {
     "id": "9",
     "title": "Рука Будды",
-    "url": "image/9.png",
+    "url": "image/products/9.png",
     "price": "2"
   },
   {
     "id": "10",
     "title": "Китайский личи",
-    "url": "image/10.png",
+    "url": "image/products/10.png",
     "price": "2"
   },
   {
     "id": "11",
     "title": "Клубника пайнберри",
-    "url": "image/11.png",
+    "url": "image/products/11.png",
     "price": "2"
   },
   {
     "id": "12",
     "title": "Романеску",
-    "url": "image/12.png",
+    "url": "image/products/12.png",
     "price": "2"
   },
   {
     "id": "13",
     "title": "Джекфрут",
-    "url": "image/13.png",
+    "url": "image/products/13.png",
     "price": "2"
   },
   {
     "id": "14",
     "title": "Аннато",
-    "url": "image/14.png",
+    "url": "image/products/14.png",
     "price": "2"
   },
 
   {
     "id": "15",
     "title": "Глаз дракона",
-    "url": "image/15.png",
+    "url": "image/products/15.png",
     "price": "2"
   }
 ]
