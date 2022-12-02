@@ -15,72 +15,84 @@
   },
   {
     "id": "3",
+    "categoryCode": "fruit",
     "title": "Акебия",
     "url": "image/products/3.png",
     "price": "2"
   },
   {
     "id": "4",
+    "categoryCode": "fruit",
     "title": "Лонган",
     "url": "image/products/4.png",
     "price": "2"
   },
   {
     "id": "5",
+    "categoryCode": "fruit",
     "title": "Манго",
     "url": "image/products/5.png",
     "price": "2"
   },
   {
     "id": "6",
+    "categoryCode": "fruit",
     "title": "Кокос",
     "url": "image/products/6.png",
     "price": "2"
   },
   {
     "id": "7",
+    "categoryCode": "fruit",
     "title": "Рогатая дыня",
     "url": "image/products/7.png",
     "price": "2"
   },
   {
     "id": "8",
+    "categoryCode": "fruit",
     "title": "Мангостан",
     "url": "image/products/8.png",
     "price": "2"
   },
   {
     "id": "9",
+    "categoryCode": "fruit",
     "title": "Рука Будды",
     "url": "image/products/9.png",
     "price": "2"
   },
   {
     "id": "10",
+    "categoryCode": "fruit",
     "title": "Китайский личи",
     "url": "image/products/10.png",
     "price": "2"
   },
   {
     "id": "11",
+    "categoryCode": "fruit",
     "title": "Клубника пайнберри",
     "url": "image/products/11.png",
     "price": "2"
   },
   {
     "id": "12",
+    "categoryCode": "fruit",
     "title": "Романеску",
     "url": "image/products/12.png",
     "price": "2"
   },
   {
     "id": "13",
+    "categoryCode": "fruit",
     "title": "Джекфрут",
     "url": "image/products/13.png",
     "price": "2"
   },
   {
     "id": "14",
+    "categoryCode": "fruit",
     "title": "Аннато",
     "url": "image/products/14.png",
     "price": "2"
@@ -88,6 +100,7 @@
 
   {
     "id": "15",
+    "categoryCode": "fruit",
     "title": "Глаз дракона",
     "url": "image/products/15.png",
     "price": "2"

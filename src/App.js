@@ -5,9 +5,9 @@ import "./App.css";
 import { FruitList, FruitDetail } from "./components/Products/Fruit/Fruit";
 import { CatalogItem } from "./components/Products/CatalogItem/CatalogItem";
 import { CatalogList } from "./components/Products/CatalogList/CatalogList";
-import { SmoothiesList } from "./components/Products/Smoothies/Smoothies";
-import { SaladList } from "./components/Products/Salad/Salad";
-import { JamList } from "./components/Products/Jam/Jam";
+// import { SmoothiesList } from "./components/Products/Smoothies/Smoothies";
+// import { SaladList } from "./components/Products/Salad/Salad";
+// import { JamList } from "./components/Products/Jam/Jam";
 
 import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
