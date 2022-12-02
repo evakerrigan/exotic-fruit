@@ -12,6 +12,9 @@
 .fruit-item:hover {
   cursor: pointer;
 }
+.fruit-item a {
+  text-decoration: none;
+}
 .fruit-image {
   width: 100%;
   height: 100%;

@@ -21,6 +21,7 @@
   font-size: 12px;
   text-decoration: none;
   color: #8e8e8e;
+  text-transform: uppercase;
 }
 .nav-item a:hover {
   color: #000;
@@ -28,6 +29,9 @@
 .nav-item a.active {
   color: #000;
   font-weight: 500;
+}
+.nav-title-none {
+  text-transform: capitalize;
 }
 @media (max-width: 750px) {
   .nav-item a {
