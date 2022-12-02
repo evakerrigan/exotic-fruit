@@ -1,39 +1,39 @@
-.fruit-list {
+.product-list {
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
 }
-.fruit-item {
+.product-item {
   width: 30%;
   margin: 10px 5px 20px 5px;
 }
-.fruit-item:hover {
+.product-item:hover {
   cursor: pointer;
 }
-.fruit-item a {
+.product-item a {
   text-decoration: none;
 }
-.fruit-image {
+.product-image {
   width: 100%;
   height: 100%;
   transition: 1s;
 }
-.fruit-title {
+.product-title {
   color: #8e8e8e;
   text-align: center;
   padding: 18px 0 8px 0;
   transition: 1s;
 }
-.fruit-item:hover .fruit-image {
+.product-item:hover .product-image {
   transform: scale(1.1);
 }
-.fruit-item:hover .fruit-title {
+.product-item:hover .product-title {
   color: #000;
 }
 @media (max-width: 500px) {
-  .fruit-item {
+  .product-item {
     width: 45%;
   }
 }

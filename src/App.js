@@ -2,12 +2,9 @@ import "./style/normalize.css";
 import "./style/reset.css";
 import "./App.css";
 
-import { FruitList, FruitDetail } from "./components/Products/Fruit/Fruit";
+import { ProductList, ProductDetail } from "./components/Products/Product/Product";
 import { CatalogItem } from "./components/Products/CatalogItem/CatalogItem";
 import { CatalogList } from "./components/Products/CatalogList/CatalogList";
-// import { SmoothiesList } from "./components/Products/Smoothies/Smoothies";
-// import { SaladList } from "./components/Products/Salad/Salad";
-// import { JamList } from "./components/Products/Jam/Jam";
 
 import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
@@ -27,20 +24,17 @@ function App() {
         <Header />
         <NavBar />
         <Routes>
-          <Route path="" element={<FruitList products={productsData} />} />
+          <Route path="" element={<ProductList products={productsData} />} />
             <Route
               path="products/:productId"
-              element={<FruitDetail products={productsData} />}
+              element={<ProductDetail products={productsData} />}
             />
           <Route
             path="products"
-            element={<FruitList products={productsData} />}
+            element={<ProductList products={productsData} />}
           />
           <Route path="catalog/:catalogCode" element={<CatalogItem />} />
           <Route path="catalog" element={<CatalogList categories={categoriesData} />} />
-          {/* <Route path="smoothies" element={<SmoothiesList />} />
-          <Route path="salad" element={<SaladList />} />
-          <Route path="jam" element={<JamList />} /> */}
 
           <Route path="delivery" element={<Delivery />} />
           <Route path="about" element={<About />} />
