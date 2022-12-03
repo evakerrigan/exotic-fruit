@@ -7,7 +7,6 @@ export const ProductItem = ({ product: { title, url } }) => {
       <img
         className="product-image"
         src={url}
-        //  style={{ backgroundImage: `url(${url})` }}
       />
       <div className="product-title">{title}</div>
     </div>
@@ -31,7 +30,10 @@ export const ProductList = ({ products }) => {
 
 
 export const ProductDetail = ({ products }) => {
-  const {productId} = useParams();
+
+  const productId = useParams();
+  console.log("productId =", productId);
+
   console.log("ProductDetail:products:", products);
 
   const product = products.find(({id}) => id === productId);
