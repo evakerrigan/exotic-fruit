@@ -3,106 +3,252 @@
     "id": "1",
     "categoryCode": "fruit",
     "title": "Карамбола",
-    "url": "image/products/1.png",
+    "url": "image/products/fruits/1.png",
     "price": "2"
   },
   {
     "id": "2",
     "categoryCode": "fruit",
     "title": "Ромбутан",
-    "url": "image/products/2.png",
+    "url": "image/products/fruits/2.png",
     "price": "1"
   },
   {
     "id": "3",
     "categoryCode": "fruit",
     "title": "Акебия",
-    "url": "image/products/3.png",
+    "url": "image/products/fruits/3.png",
     "price": "2"
   },
   {
     "id": "4",
     "categoryCode": "fruit",
     "title": "Лонган",
-    "url": "image/products/4.png",
+    "url": "image/products/fruits/4.png",
     "price": "2"
   },
   {
     "id": "5",
     "categoryCode": "fruit",
     "title": "Манго",
-    "url": "image/products/5.png",
+    "url": "image/products/fruits/5.png",
     "price": "2"
   },
   {
     "id": "6",
     "categoryCode": "fruit",
     "title": "Кокос",
-    "url": "image/products/6.png",
+    "url": "image/products/fruits/6.png",
     "price": "2"
   },
   {
     "id": "7",
     "categoryCode": "fruit",
     "title": "Рогатая дыня",
-    "url": "image/products/7.png",
+    "url": "image/products/fruits/7.png",
     "price": "2"
   },
   {
     "id": "8",
     "categoryCode": "fruit",
     "title": "Мангостан",
-    "url": "image/products/8.png",
+    "url": "image/products/fruits/8.png",
     "price": "2"
   },
   {
     "id": "9",
     "categoryCode": "fruit",
     "title": "Рука Будды",
-    "url": "image/products/9.png",
+    "url": "image/products/fruits/9.png",
     "price": "2"
   },
   {
     "id": "10",
     "categoryCode": "fruit",
     "title": "Китайский личи",
-    "url": "image/products/10.png",
+    "url": "image/products/fruits/10.png",
     "price": "2"
   },
   {
     "id": "11",
     "categoryCode": "fruit",
     "title": "Клубника пайнберри",
-    "url": "image/products/11.png",
+    "url": "image/products/fruits/11.png",
     "price": "2"
   },
   {
     "id": "12",
     "categoryCode": "fruit",
     "title": "Романеску",
-    "url": "image/products/12.png",
+    "url": "image/products/fruits/12.png",
     "price": "2"
   },
   {
     "id": "13",
     "categoryCode": "fruit",
     "title": "Джекфрут",
-    "url": "image/products/13.png",
+    "url": "image/products/fruits/13.png",
     "price": "2"
   },
   {
     "id": "14",
     "categoryCode": "fruit",
     "title": "Аннато",
-    "url": "image/products/14.png",
+    "url": "image/products/fruits/14.png",
     "price": "2"
   },
-
   {
     "id": "15",
     "categoryCode": "fruit",
     "title": "Глаз дракона",
-    "url": "image/products/15.png",
+    "url": "image/products/fruits/15.png",
+    "price": "2"
+  },
+  {
+    "id": "16",
+    "categoryCode": "fruit",
+    "title": "Аки",
+    "url": "image/products/fruits/16.png",
+    "price": "2"
+  },
+  {
+    "id": "17",
+    "categoryCode": "fruit",
+    "title": "Гуава",
+    "url": "image/products/fruits/17.png",
+    "price": "2"
+  },
+  {
+    "id": "18",
+    "categoryCode": "fruit",
+    "title": "Джаботикаба",
+    "url": "image/products/fruits/18.png",
+    "price": "2"
+  },
+  {
+    "id": "19",
+    "categoryCode": "fruit",
+    "title": "Драконий фрукт",
+    "url": "image/products/fruits/19.png",
+    "price": "2"
+  },
+  {
+    "id": "20",
+    "categoryCode": "fruit",
+    "title": "Змеиный фрукт",
+    "url": "image/products/fruits/20.png",
+    "price": "2"
+  },
+  {
+    "id": "21",
+    "categoryCode": "fruit",
+    "title": "Какао",
+    "url": "image/products/fruits/21.png",
+    "price": "2"
+  },
+  {
+    "id": "22",
+    "categoryCode": "fruit",
+    "title": "Каменное яблоко",
+    "url": "image/products/fruits/22.png",
+    "price": "2"
+  },
+  {
+    "id": "23",
+    "categoryCode": "fruit",
+    "title": "Канталупа",
+    "url": "image/products/fruits/23.png",
+    "price": "2"
+  },
+  {
+    "id": "24",
+    "categoryCode": "fruit",
+    "title": "Кивано",
+    "url": "image/products/fruits/24.png",
+    "price": "2"
+  },
+  {
+    "id": "201",
+    "categoryCode": "juice",
+    "title": "Апельсиновый",
+    "url": "image/products/juice/juice1.png",
+    "price": "2"
+  },
+  {
+    "id": "202",
+    "categoryCode": "juice",
+    "title": "Морковный",
+    "url": "image/products/juice/juice2.png",
+    "price": "2"
+  },
+  {
+    "id": "203",
+    "categoryCode": "juice",
+    "title": "Манго",
+    "url": "image/products/juice/juice3.png",
+    "price": "2"
+  },
+  {
+    "id": "401",
+    "categoryCode": "salad",
+    "title": "Фруктовый",
+    "url": "image/products/salad/salad1.png",
+    "price": "2"
+  },
+  {
+    "id": "402",
+    "categoryCode": "salad",
+    "title": "Кубик-Рубик",
+    "url": "image/products/salad/salad2.png",
+    "price": "2"
+  },
+  {
+    "id": "301",
+    "categoryCode": "wine",
+    "title": "Красное вино",
+    "url": "image/products/wine/wine1.png",
+    "price": "2"
+  },
+  {
+    "id": "501",
+    "categoryCode": "smoothies",
+    "title": "Грибной",
+    "url": "image/products/smoothies/smoothies1.png",
+    "price": "2"
+  },
+  {
+    "id": "502",
+    "categoryCode": "smoothies",
+    "title": "Зеленый лук",
+    "url": "image/products/smoothies/smoothies2.png",
+    "price": "2"
+  },
+  {
+    "id": "503",
+    "categoryCode": "smoothies",
+    "title": "Арбузный",
+    "url": "image/products/smoothies/smoothies3.png",
+    "price": "2"
+  },
+  {
+    "id": "504",
+    "categoryCode": "smoothies",
+    "title": "Морковный",
+    "url": "image/products/smoothies/smoothies5.png",
+    "price": "2"
+  },
+  {
+    "id": "505",
+    "categoryCode": "smoothies",
+    "title": "Кокосовый",
+    "url": "image/products/smoothies/smoothies4.png",
+    "price": "2"
+  },
+  {
+    "id": "601",
+    "categoryCode": "jam",
+    "title": "Варенье",
+    "url": "image/products/jam/jam1.png",
     "price": "2"
   }
 ]
