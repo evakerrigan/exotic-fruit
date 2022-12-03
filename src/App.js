@@ -25,16 +25,19 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="" element={<ProductList products={productsData} />} />
-            <Route
-              path="products/:productId"
-              element={<ProductDetail products={productsData} />}
-            />
+          <Route
+            path="products/:productId"
+            element={<ProductDetail products={productsData} />}
+          />
           <Route
             path="products"
             element={<ProductList products={productsData} />}
           />
           <Route path="catalog/:catalogCode" element={<CatalogItem />} />
-          <Route path="catalog" element={<CatalogList categories={categoriesData} />} />
+          <Route
+            path="catalog"
+            element={<CatalogList categories={categoriesData} />}
+          />
 
           <Route path="delivery" element={<Delivery />} />
           <Route path="about" element={<About />} />
