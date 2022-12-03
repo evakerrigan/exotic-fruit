@@ -9,9 +9,9 @@ import { CatalogList } from "./components/Products/CatalogList/CatalogList";
 import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
 import { NavBar } from "./components/NavBar/NavBar";
-import { Delivery } from "./components/Delivery/Delivery";
-import { About } from "./components/About/About";
-import { Contacts } from "./components/Contacts/Contacts";
+import { Delivery } from "./pages/Delivery/Delivery";
+import { About } from "./pages/About/About";
+import { Contacts } from "./pages/Contacts/Contacts";
 
 import { Route, Routes } from "react-router-dom";
 import productsData from "./json/products.json";
