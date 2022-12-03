@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/exotic-fruit/static/css/main.cd61157a.css",
-    "main.js": "/exotic-fruit/static/js/main.eb815be8.js",
+    "main.js": "/exotic-fruit/static/js/main.bc41588f.js",
     "static/media/tw.png": "/exotic-fruit/static/media/tw.d5d24d2d897d02779141.png",
     "static/media/vk.png": "/exotic-fruit/static/media/vk.83f900a49e551619b05f.png",
     "static/media/fb.png": "/exotic-fruit/static/media/fb.0de2a9e83543418716dc.png",
     "index.html": "/exotic-fruit/index.html",
     "main.cd61157a.css.map": "/exotic-fruit/static/css/main.cd61157a.css.map",
-    "main.eb815be8.js.map": "/exotic-fruit/static/js/main.eb815be8.js.map"
+    "main.bc41588f.js.map": "/exotic-fruit/static/js/main.bc41588f.js.map"
   },
   "entrypoints": [
     "static/css/main.cd61157a.css",
-    "static/js/main.eb815be8.js"
+    "static/js/main.bc41588f.js"
   ]
 }
