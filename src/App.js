@@ -2,8 +2,8 @@ import "./style/normalize.css";
 import "./style/reset.css";
 import "./App.css";
 
-import { ProductList } from "./components/Product/ProductList";
-import { ProductDetail } from "./components/Product/ProductDetail";
+import { ProductListPage } from "./pages/ProductList";
+import { ProductDetailPage } from "./pages/ProductDetail";
 import { CatalogItem } from "./components/CatalogItem/CatalogItem";
 import { CatalogList } from "./components/CatalogList/CatalogList";
 
@@ -15,7 +15,6 @@ import { About } from "./pages/About/About";
 import { Contacts } from "./pages/Contacts/Contacts";
 
 import { Route, Routes } from "react-router-dom";
-import productsData from "./json/products.json";
 import categoriesData from "./json/category.json";
 
 function App() {
@@ -25,14 +24,14 @@ function App() {
         <Header />
         <NavBar />
         <Routes>
-          <Route path="" element={<ProductList products={productsData} />} />
+          <Route path="" element={<ProductListPage />} />
           <Route
             path="products/:productId"
-            element={<ProductDetail products={productsData} />}
+            element={<ProductDetailPage />}
           />
           <Route
             path="products"
-            element={<ProductList products={productsData} />}
+            element={<ProductListPage />}
           />
           <Route path="catalog/:catalogCode" element={<CatalogItem />} />
           <Route
