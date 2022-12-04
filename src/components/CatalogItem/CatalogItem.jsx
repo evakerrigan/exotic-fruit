@@ -1,7 +1,7 @@
 import "./CatalogItem.css";
 import { useParams } from "react-router-dom";
-import { ProductList } from "../Product/Product";
-import productsData from "../../../json/products.json";
+import { ProductList } from "../Product/ProductList";
+import productsData from "../../json/products.json";
 
 export const CatalogItem = () => {
   console.log("productsData =", productsData);

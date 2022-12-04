@@ -2,9 +2,10 @@ import "./style/normalize.css";
 import "./style/reset.css";
 import "./App.css";
 
-import { ProductList, ProductDetail } from "./components/Products/Product/Product";
-import { CatalogItem } from "./components/Products/CatalogItem/CatalogItem";
-import { CatalogList } from "./components/Products/CatalogList/CatalogList";
+import { ProductList } from "./components/Product/ProductList";
+import { ProductDetail } from "./components/Product/ProductDetail";
+import { CatalogItem } from "./components/CatalogItem/CatalogItem";
+import { CatalogList } from "./components/CatalogList/CatalogList";
 
 import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
