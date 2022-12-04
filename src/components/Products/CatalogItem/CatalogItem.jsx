@@ -6,14 +6,14 @@ import productsData from "../../../json/products.json";
 export const CatalogItem = () => {
   console.log("productsData =", productsData);
 
-  const qwer = useParams();
-  console.log("qwer =", qwer);
+  const { catalogCode } = useParams();
+  // const urlParams = useParams();
+  // catalogCode = urlParams.catalogCode;
 
-  const qwer2 = qwer.catalogCode;
-  console.log("qwer2 =", qwer2);
+  console.log("catalogCode =", catalogCode);
 
   const listCatalogItem = productsData.filter(
-    (product) => product.categoryCode === qwer2
+    (product) => product.categoryCode === catalogCode
   );
 
   console.log("listCatalogItem =", listCatalogItem);

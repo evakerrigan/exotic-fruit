@@ -19,7 +19,7 @@ export const ProductList = ({ products }) => {
     <ul className="product-list">
       {products.map((product) => (
         <li className="product-item" key={product.id}>
-          <NavLink to={`/product/${product.id}`}>
+          <NavLink to={`/products/${product.id}`}>
             <ProductItem product={product} />
           </NavLink>
         </li>
@@ -31,7 +31,7 @@ export const ProductList = ({ products }) => {
 
 export const ProductDetail = ({ products }) => {
 
-  const productId = useParams();
+  const { productId } = useParams();
   console.log("productId =", productId);
 
   console.log("ProductDetail:products:", products);
