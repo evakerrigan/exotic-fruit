@@ -2,6 +2,7 @@ import "./style/normalize.css";
 import "./style/reset.css";
 import "./App.css";
 
+import { useState } from "react";
 import { ProductListPage } from "./pages/ProductList";
 import { ProductDetailPage } from "./pages/ProductDetail";
 import { CatalogItem } from "./components/CatalogItem/CatalogItem";
@@ -18,8 +19,25 @@ import { Route, Routes } from "react-router-dom";
 import categoriesData from "./json/category.json";
 
 function App() {
+
+  const [ basket, setBasket ] = useState({products: {}});
+
+const addProductToBasket = (productId) => {
+  const initProductCount = basket.products[productId] || 0;
+  setBasket({
+    ...basket,
+    products: {
+      ...basket.products,
+      [productId]: initProductCount + 1
+    }
+  });
+}
+
+console.log('basket =', basket);
+
   return (
     <div className="App">
+    <button onClick={() => addProductToBasket(3)} >++++</button>
       <div className="wrapper-app">
         <Header />
         <NavBar />
