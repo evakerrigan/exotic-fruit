@@ -20,7 +20,7 @@ import categoriesData from "./json/category.json";
 
 function App() {
 
-  const [ basket, setBasket ] = useState({products: {}});
+const [ basket, setBasket ] = useState({products: {}});
 
 const addProductToBasket = (productId) => {
   const initProductCount = basket.products[productId] || 0;
