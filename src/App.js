@@ -20,24 +20,24 @@ import categoriesData from "./json/category.json";
 
 function App() {
 
-const [ basket, setBasket ] = useState({products: {}});
+// const [ basket, setBasket ] = useState({products: {}});
 
-const addProductToBasket = (productId) => {
-  const initProductCount = basket.products[productId] || 0;
-  setBasket({
-    ...basket,
-    products: {
-      ...basket.products,
-      [productId]: initProductCount + 1
-    }
-  });
-}
+// const addProductToBasket = (productId) => {
+//   const initProductCount = basket.products[productId] || 0;
+//   setBasket({
+//     ...basket,
+//     products: {
+//       ...basket.products,
+//       [productId]: initProductCount + 1
+//     }
+//   });
+// }
 
-console.log('basket =', basket);
+// console.log('basket =', basket);
 
   return (
     <div className="App">
-    <button onClick={() => addProductToBasket(3)} >++++</button>
+    {/* <button onClick={() => addProductToBasket(3)} >++++</button> */}
       <div className="wrapper-app">
         <Header />
         <NavBar />

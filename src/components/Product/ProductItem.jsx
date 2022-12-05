@@ -1,5 +1,5 @@
 import "./Product.css";
-import { NavLink, useParams } from "react-router-dom";
+
 
 export const ProductItem = ({ product: { title, url } }) => {
   return (
@@ -8,7 +8,7 @@ export const ProductItem = ({ product: { title, url } }) => {
         className="product-image"
         src={url}
       />
-      <div className="product-title">{title}</div>
+      <div className="product-title">{title}</div>      
     </div>
   );
 };
