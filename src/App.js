@@ -14,6 +14,7 @@ import { NavBar } from "./components/NavBar/NavBar";
 import { Delivery } from "./pages/Delivery/Delivery";
 import { About } from "./pages/About/About";
 import { Contacts } from "./pages/Contacts/Contacts";
+import { BasketPage } from "./pages/BasketPage/BasketPage";
 
 import { Route, Routes } from "react-router-dom";
 import categoriesData from "./json/category.json";
@@ -60,6 +61,7 @@ function App() {
           <Route path="delivery" element={<Delivery />} />
           <Route path="about" element={<About />} />
           <Route path="contacts" element={<Contacts />} />
+          <Route path="basket" element={<BasketPage />} />
         </Routes>
         <Footer />
       </div>

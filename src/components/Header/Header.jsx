@@ -2,6 +2,7 @@ import "./Header.css";
 import { Authorization } from "../Authorization/Authorization";
 import { Basket } from "../Basket/Basket";
 import { NavPage } from "../NavPage/NavPage";
+import { NavLink } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -16,7 +17,7 @@ export const Header = () => {
       <div className="header-right">
         <div className="wrapper-header">
           <Authorization />
-          <Basket />
+          <NavLink to="/basket"><Basket /></NavLink>
         </div>
         <NavPage />
       </div>
