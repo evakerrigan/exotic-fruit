@@ -12,7 +12,10 @@ export const ProductList = ({ products }) => {
           <NavLink to={`/products/${product.id}`}>
             <ProductItem product={product} />
           </NavLink>
-          <BasketProduct productId={`${product.id}`} />
+          <div className="product-properties">
+            <div className="product-price">{product.price}</div>
+            <BasketProduct productId={`${product.id}`} />
+          </div>
         </li>
       ))}
     </ul>
