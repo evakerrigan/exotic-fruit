@@ -16,11 +16,6 @@
   padding: 20px 0 40px 0;
   transition: 1s;
 }
-/* .product-detail-properties {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 30px 0 30px;
-} */
 .product-detail-price {
   color: #8e8e8e;
   padding: 0px 0 0 0;
@@ -42,5 +37,29 @@
 }
 
 @media (max-width: 500px) {
+  .product-detail-wrapper {
+    flex-wrap: wrap;
+  }
+  .product-detail-image {
+    width: 100%;
+  }
+  .product-detail-description {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .product-detail-title {
+    width: 30%;
+    padding: 0;
+  }
+  .product-detail-container {
+    width: 70%;
+  }
+  .product-detail-total {
+    padding: 20px 0 0 0;
+  }
+  .product-detail-basket {
+    display: flex;
+  }
 
 }

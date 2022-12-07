@@ -19,18 +19,19 @@ export const ProductDetailPage = () => {
       <img className="product-detail-image" src={product.url} />
       <div className="product-detail-description">
         <div className="product-detail-title">{product.title}</div>
-        <div className="product-detail-price">
-          Цена: <span className="product-detail-amount">{product.price}</span>{" "}
-          рублей
-        </div>
-        <div className="product-detail-basket">
-          В корзине:
-          <BasketProduct productId={`${product.id}`} />
-          <span className="product-detail-amount">{product.id}</span> штук
-        </div>
-
-        <div className="product-detail-total">
-          Итого: <span className="product-detail-amount">{total}</span> рублей
+        <div className="product-detail-container">
+          <div className="product-detail-price">
+            Цена: <span className="product-detail-amount">{product.price}</span>{" "}
+            рублей
+          </div>
+          <div className="product-detail-basket">
+            В корзине:
+            <BasketProduct productId={`${product.id}`} />
+            <span className="product-detail-amount">{product.id}</span> штук
+          </div>
+          <div className="product-detail-total">
+            Итого: <span className="product-detail-amount">{total}</span> рублей
+          </div>
         </div>
       </div>
     </div>
