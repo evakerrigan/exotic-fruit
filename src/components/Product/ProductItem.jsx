@@ -1,6 +1,5 @@
 import "./Product.css";
 
-
 export const ProductItem = ({ product: { title, url } }) => {
   return (
     <div>
@@ -8,7 +7,7 @@ export const ProductItem = ({ product: { title, url } }) => {
         className="product-image"
         src={url}
       />
-      <div className="product-title">{title}</div>      
+      <div className="product-title">{title}</div>
     </div>
   );
 };
