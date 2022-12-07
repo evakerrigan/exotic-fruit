@@ -49,9 +49,10 @@ export const BasketProduct = (productId) => {
           placeholder="0"
           type="text"
           name=""
-          value="0"
+          defaultValue="0"
           id=""
           className="basket-product-input"
+          readOnly
         />
         <div className="">
           <button
