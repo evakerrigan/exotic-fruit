@@ -3,8 +3,8 @@ import "./style/reset.css";
 import "./App.css";
 
 import { useState } from "react";
-import { ProductListPage } from "./pages/ProductList";
-import { ProductDetailPage } from "./pages/ProductDetail";
+import { ProductListPage } from "./pages/Product/ProductList";
+import { ProductDetailPage } from "./pages/Product/ProductDetail";
 import { CatalogItem } from "./components/CatalogItem/CatalogItem";
 import { CatalogList } from "./components/CatalogList/CatalogList";
 
