@@ -2,7 +2,9 @@ import "./BasketProduct.css";
 import { useState } from "react";
 
 export const BasketProduct = (productId) => {
-  const [basket, setBasket] = useState({ products: {} });
+  const [basket, setBasket] = useState({ "products": {} });
+
+  // console.log("исходный basket =", basket);
 
   const addProductToBasket = (productId) => {
     console.log("ткнули на плюс, productId =", productId);
@@ -14,6 +16,12 @@ export const BasketProduct = (productId) => {
         ...basket.products,
         [productId]: initProductCount + 1,
       },
+
+      // if (productId in basket.products) {
+      //   basket.products[productId] = initProductCount + 1
+      // } else {
+      //   basket.products[productId] = 1
+      // }
     });
     console.log("basket =", basket);
   };
