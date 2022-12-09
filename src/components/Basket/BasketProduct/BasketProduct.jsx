@@ -6,7 +6,7 @@ export const BasketProduct = (productId) => {
 
   // console.log("исходный basket =", basket);
 
-  const addProductToBasket = (productId) => {
+  const addProductToBasket = ({productId}) => {
     console.log("ткнули на плюс, productId =", productId);
 
     const initProductCount = basket.products[productId] || 0;
@@ -26,7 +26,7 @@ export const BasketProduct = (productId) => {
     console.log("basket =", basket);
   };
 
-  const removeProductToBasket = (productId) => {
+  const removeProductToBasket = ({productId}) => {
     console.log("ткнули на минус, productId =", productId);
 
     const initProductCount = basket.products[productId] || 0;
