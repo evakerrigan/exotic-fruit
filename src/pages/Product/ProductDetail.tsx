@@ -1,18 +1,29 @@
 import "./ProductDetail.css";
 import { NavLink, useParams } from "react-router-dom";
-import { BasketProduct } from "../../components/Basket/BasketProduct/BasketProduct";
+import { BasketProduct, BasketProductProps } from "../../components/Basket/BasketProduct/BasketProduct";
 // import { ProductItem } from "../components/Product/ProductItem";
 import productsData from "../../json/products.json";
-import { TempAny } from "src/types";
+import { ProductDTO, TempAny } from "src/types";
 
-export const ProductDetailPage = () => {
-  const { productId } = useParams();
+interface ProductDetailPageProps {
+  removeProductToBasket: BasketProductProps['removeProduct'];
+  addProductToBasket: BasketProductProps['addProduct'];
+}
+
+export const ProductDetailPage = ({addProductToBasket,removeProductToBasket}: ProductDetailPageProps) => {
+  const { productId } = useParams<{productId: string}>();
   console.log("productId =", productId);
 
-  const product: TempAny = productsData.find(({ id }) => id === productId);
+  const product = productsData.find(({ id }) => id === productId);
   console.log("product:", product);
 
-  const total = product.id * product.price;
+  if (!product) {
+    return (<div>404</div>)
+  }
+
+  // const total = product.id * product.price;
+  // TODO: calc total
+  const total = product.price ;
 
   return (
     // <ProductItem product={product} />
@@ -27,7 +38,8 @@ export const ProductDetailPage = () => {
           </div>
           <div className="product-detail-basket">
             В корзине:
-            <BasketProduct productId={`${product.id}`} />
+            <BasketProduct productId={`${product.id}`} addProduct={addProductToBasket}
+                removeProduct={removeProductToBasket} />
             <span className="product-detail-amount">{product.id}</span> штук
           </div>
           <div className="product-detail-total">

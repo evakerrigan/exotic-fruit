@@ -2,8 +2,17 @@ import "./CatalogItem.css";
 import { useParams } from "react-router-dom";
 import { ProductList } from "../Product/ProductList";
 import productsData from "../../json/products.json";
+import { BasketProductProps } from "../Basket/BasketProduct/BasketProduct";
 
-export const CatalogItem = () => {
+interface CatalogItemProps {
+  removeProductToBasket: BasketProductProps['removeProduct'];
+  addProductToBasket: BasketProductProps['addProduct'];
+}
+
+export const CatalogItem = ({
+  removeProductToBasket,
+  addProductToBasket
+}: CatalogItemProps) => {
   console.log("productsData =", productsData);
 
   const { catalogCode } = useParams();
@@ -20,7 +29,11 @@ export const CatalogItem = () => {
 
   return (
     <div>
-      <ProductList products={listCatalogItem} />
+      <ProductList products={listCatalogItem}
+        removeProductToBasket={removeProductToBasket}
+        addProductToBasket={addProductToBasket}
+      />
+
     </div>
   );
 };

@@ -1,46 +1,17 @@
+import { ProductDTO } from "src/types";
 import "./BasketProduct.css";
-import { useState } from "react";
-import { TempAny } from "../../../types";
 
-export const BasketProduct = (productId: TempAny) => {
-  const [basket, setBasket] = useState<TempAny>({ "products": {} });
+export interface BasketProductProps {
+  productId: ProductDTO['id'];
+  removeProduct: (productId: ProductDTO['id']) => void;
+  addProduct: (productId: ProductDTO['id']) => void;
+}
 
-  // console.log("исходный basket =", basket);
-
-  const addProductToBasket = ({productId}: TempAny) => {
-    console.log("ткнули на плюс, productId =", productId);
-
-    const initProductCount: TempAny = basket.products[productId] || 0;
-    setBasket({
-      ...basket,
-      products: {
-        ...basket.products,
-        [productId]: initProductCount + 1,
-      },
-
-      // if (productId in basket.products) {
-      //   basket.products[productId] = initProductCount + 1
-      // } else {
-      //   basket.products[productId] = 1
-      // }
-    });
-    console.log("basket =", basket);
-  };
-
-  const removeProductToBasket = ({productId}: TempAny) => {
-    console.log("ткнули на минус, productId =", productId);
-
-    const initProductCount: TempAny = basket.products[productId] || 0;
-    setBasket({
-      ...basket,
-      products: {
-        ...basket.products,
-        [productId]: initProductCount - 1
-      }
-    });
-    console.log('basket =', basket);
-  };
-
+export const BasketProduct = ({
+  removeProduct,
+  addProduct,
+  productId
+}: BasketProductProps) => {
   return (
     <div>
       {/* <button onClick={() => addProductToBasket(productId)} className="basket-product">+</button> */}
@@ -49,7 +20,7 @@ export const BasketProduct = (productId: TempAny) => {
           <button
             className="basket-product-button"
             type="button"
-            onClick={() => removeProductToBasket(productId)}
+            onClick={() => removeProduct(productId)}
           >
             -
           </button>
@@ -67,7 +38,7 @@ export const BasketProduct = (productId: TempAny) => {
           <button
             className="basket-product-button"
             type="button"
-            onClick={() => addProductToBasket(productId)}
+            onClick={() => addProduct(productId)}
           >
             +
           </button>

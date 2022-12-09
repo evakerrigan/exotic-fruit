@@ -19,40 +19,70 @@ import { BasketPage } from "./pages/BasketPage/BasketPage";
 import { Route, Routes } from "react-router-dom";
 import categoriesData from "./json/category.json";
 
+import { initialBasketState } from "src/constants";
+import { TempAny, BasketState, ProductDTO } from "src/types";
+
 export default function App() {
 
-// const [ basket, setBasket ] = useState({products: {}});
+  const [basket, setBasket] = useState<BasketState>(initialBasketState);
 
-// const addProductToBasket = (productId) => {
-//   const initProductCount = basket.products[productId] || 0;
-//   setBasket({
-//     ...basket,
-//     products: {
-//       ...basket.products,
-//       [productId]: initProductCount + 1
-//     }
-//   });
-// }
+  const addProductToBasket = (productId: ProductDTO['id']) => {
+    console.log("ткнули на плюс, productId =", productId);
 
-// console.log('basket =', basket);
+    const initProductCount: TempAny = basket.products[productId] || 0;
+    setBasket({
+      ...basket,
+      products: {
+        ...basket.products,
+        [productId]: initProductCount + 1,
+      },
+    });
+    console.log("basket =", basket);
+  };
+
+  const removeProductToBasket = (productId: ProductDTO['id']) => {
+    console.log("ткнули на минус, productId =", productId);
+
+    const initProductCount: TempAny = basket.products[productId] || 0;
+    setBasket({
+      ...basket,
+      products: {
+        ...basket.products,
+        [productId]: initProductCount - 1
+      }
+    });
+    console.log('basket =', basket);
+  };
 
   return (
     <div className="App">
-    {/* <button onClick={() => addProductToBasket(3)} >++++</button> */}
+      {/* <button onClick={() => addProductToBasket(3)} >++++</button> */}
       <div className="wrapper-app">
         <Header />
         <NavBar />
         <Routes>
-          <Route path="" element={<ProductListPage />} />
+          <Route path="" element={<ProductListPage addProductToBasket={addProductToBasket}
+            removeProductToBasket={removeProductToBasket} />} />
           <Route
             path="products/:productId"
-            element={<ProductDetailPage />}
+            element={<ProductDetailPage
+              addProductToBasket={addProductToBasket}
+              removeProductToBasket={removeProductToBasket} />}
           />
           <Route
             path="products"
-            element={<ProductListPage />}
+            element={<ProductListPage addProductToBasket={addProductToBasket}
+              removeProductToBasket={removeProductToBasket} />}
           />
-          <Route path="catalog/:catalogCode" element={<CatalogItem />} />
+          <Route
+            path="catalog/:catalogCode"
+            element={
+              <CatalogItem
+                addProductToBasket={addProductToBasket}
+                removeProductToBasket={removeProductToBasket}
+              />
+            }
+          />
           <Route
             path="catalog"
             element={<CatalogList categories={categoriesData} />}
