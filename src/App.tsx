@@ -19,7 +19,7 @@ import { BasketPage } from "./pages/BasketPage/BasketPage";
 import { Route, Routes } from "react-router-dom";
 import categoriesData from "./json/category.json";
 
-function App() {
+export default function App() {
 
 // const [ basket, setBasket ] = useState({products: {}});
 
@@ -68,5 +68,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
