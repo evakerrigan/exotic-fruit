@@ -3,12 +3,13 @@ import { NavLink, useParams } from "react-router-dom";
 import { BasketProduct } from "../../components/Basket/BasketProduct/BasketProduct";
 // import { ProductItem } from "../components/Product/ProductItem";
 import productsData from "../../json/products.json";
+import { TempAny } from "src/types";
 
 export const ProductDetailPage = () => {
   const { productId } = useParams();
   console.log("productId =", productId);
 
-  const product = productsData.find(({ id }) => id === productId);
+  const product: TempAny = productsData.find(({ id }) => id === productId);
   console.log("product:", product);
 
   const total = product.id * product.price;

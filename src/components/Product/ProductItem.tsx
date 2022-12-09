@@ -1,6 +1,7 @@
+import { TempAny } from "src/types";
 import "./Product.css";
 
-export const ProductItem = ({ product: { title, url } }) => {
+export const ProductItem = ({ product: { title, url } }: TempAny) => {
   return (
     <div>
       <img

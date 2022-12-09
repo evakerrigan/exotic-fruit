@@ -1,15 +1,16 @@
 import "./Authorization.css";
 import { useState } from "react";
 import usersData from "../../json/users.json";
+import { TempAny } from "src/types";
 
 export const Authorization = () => {
 
   const [userLoginInput, setUserLoginInput] = useState("");
   const [userPasswordInput, setUserPasswordInput] = useState("");
 
-  const password = document.querySelector('.authorization-input.password');
-  const loginInput = document.querySelector('.authorization');
-  const loginOk = document.querySelector('.authorization-ok');
+  const password: TempAny = document.querySelector('.authorization-input.password');
+  const loginInput: TempAny = document.querySelector('.authorization');
+  const loginOk: TempAny = document.querySelector('.authorization-ok');
 
   for (let i=0; i<usersData.length; i++) {
     if ( usersData[i].login === userLoginInput) {
