@@ -3,14 +3,15 @@ import { NavLink, useParams } from "react-router-dom";
 import { BasketProduct, BasketProductProps } from "../../components/Basket/BasketProduct/BasketProduct";
 // import { ProductItem } from "../components/Product/ProductItem";
 import productsData from "../../json/products.json";
-import { ProductDTO, TempAny } from "src/types";
+import { BasketState, ProductDTO, TempAny } from "src/types";
 
 interface ProductDetailPageProps {
+  basket: BasketState;
   removeProductToBasket: BasketProductProps['removeProduct'];
   addProductToBasket: BasketProductProps['addProduct'];
 }
 
-export const ProductDetailPage = ({addProductToBasket,removeProductToBasket}: ProductDetailPageProps) => {
+export const ProductDetailPage = ({basket, addProductToBasket,removeProductToBasket}: ProductDetailPageProps) => {
   const { productId } = useParams<{productId: string}>();
   console.log("productId =", productId);
 
@@ -38,7 +39,8 @@ export const ProductDetailPage = ({addProductToBasket,removeProductToBasket}: Pr
           </div>
           <div className="product-detail-basket">
             В корзине:
-            <BasketProduct productId={`${product.id}`} addProduct={addProductToBasket}
+            <BasketProduct productCount={basket.products[product.id]} productId={`${product.id}`}
+             addProduct={addProductToBasket}
                 removeProduct={removeProductToBasket} />
             <span className="product-detail-amount">{product.id}</span> штук
           </div>

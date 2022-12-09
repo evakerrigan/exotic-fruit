@@ -61,23 +61,26 @@ export default function App() {
         <Header />
         <NavBar />
         <Routes>
-          <Route path="" element={<ProductListPage addProductToBasket={addProductToBasket}
+          <Route path="" element={<ProductListPage
+            basket={basket} addProductToBasket={addProductToBasket}
             removeProductToBasket={removeProductToBasket} />} />
           <Route
             path="products/:productId"
             element={<ProductDetailPage
+              basket={basket}
               addProductToBasket={addProductToBasket}
               removeProductToBasket={removeProductToBasket} />}
           />
           <Route
             path="products"
-            element={<ProductListPage addProductToBasket={addProductToBasket}
+            element={<ProductListPage basket={basket} addProductToBasket={addProductToBasket}
               removeProductToBasket={removeProductToBasket} />}
           />
           <Route
             path="catalog/:catalogCode"
             element={
               <CatalogItem
+                basket={basket}
                 addProductToBasket={addProductToBasket}
                 removeProductToBasket={removeProductToBasket}
               />

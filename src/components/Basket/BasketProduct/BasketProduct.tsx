@@ -3,6 +3,7 @@ import "./BasketProduct.css";
 
 export interface BasketProductProps {
   productId: ProductDTO['id'];
+  productCount?: number;
   removeProduct: (productId: ProductDTO['id']) => void;
   addProduct: (productId: ProductDTO['id']) => void;
 }
@@ -10,7 +11,8 @@ export interface BasketProductProps {
 export const BasketProduct = ({
   removeProduct,
   addProduct,
-  productId
+  productId,
+  productCount
 }: BasketProductProps) => {
   return (
     <div>
@@ -25,7 +27,7 @@ export const BasketProduct = ({
             -
           </button>
         </div>
-        <input
+        {/* <input
           placeholder="0"
           type="text"
           name=""
@@ -33,7 +35,10 @@ export const BasketProduct = ({
           id=""
           className="basket-product-input"
           readOnly
-        />
+        /> */}
+        <span>{productCount || 0}</span>
+
+
         <div className="">
           <button
             className="basket-product-button"
