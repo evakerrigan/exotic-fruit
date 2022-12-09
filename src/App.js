@@ -1,6 +1,6 @@
-import "./style/normalize.css";
-import "./style/reset.css";
-import "./App.css";
+import "./style/normalize.scss";
+import "./style/reset.scss";
+import "./App.scss";
 
 import { useState } from "react";
 import { ProductListPage } from "./pages/Product/ProductList";
