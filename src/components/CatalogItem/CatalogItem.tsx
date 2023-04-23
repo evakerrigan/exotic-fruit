@@ -3,7 +3,8 @@ import { useParams } from "react-router-dom";
 import { ProductList } from "../Product/ProductList";
 import productsData from "../../json/products.json";
 import { BasketProductProps } from "../Basket/BasketProduct/BasketProduct";
-import { BasketState } from "src/types";
+import { BasketState } from "src/types/states/BasketState";
+
 
 interface CatalogItemProps {
   basket: BasketState;
@@ -30,9 +31,9 @@ export const CatalogItem = ({
 
   return (
     <div>
-      <ProductList 
-      basket={basket}
-      products={listCatalogItem}
+      <ProductList
+        basket={basket}
+        products={listCatalogItem}
         removeProductToBasket={removeProductToBasket}
         addProductToBasket={addProductToBasket}
       />

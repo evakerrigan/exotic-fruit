@@ -1,5 +1,5 @@
 import { BasketProductProps } from "src/components/Basket/BasketProduct/BasketProduct";
-import { BasketState } from "src/types";
+import { BasketState } from "../../types/states/BasketState";
 import { ProductList } from "../../components/Product/ProductList";
 import productsData from "../../json/products.json";
 

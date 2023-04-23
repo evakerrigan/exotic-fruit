@@ -1,9 +1,8 @@
 import "./ProductDetail.css";
-import { NavLink, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { BasketProduct, BasketProductProps } from "../../components/Basket/BasketProduct/BasketProduct";
-// import { ProductItem } from "../components/Product/ProductItem";
 import productsData from "../../json/products.json";
-import { BasketState, ProductDTO, TempAny } from "src/types";
+import { BasketState } from "src/types/states/BasketState";
 
 interface ProductDetailPageProps {
   basket: BasketState;
@@ -29,7 +28,7 @@ export const ProductDetailPage = ({basket, addProductToBasket,removeProductToBas
   return (
     // <ProductItem product={product} />
     <div className="product-detail-wrapper">
-      <img className="product-detail-image" src={product.url} />
+      <img className="product-detail-image" src={product.url} alt={product.title} />
       <div className="product-detail-description">
         <div className="product-detail-title">{product.title}</div>
         <div className="product-detail-container">

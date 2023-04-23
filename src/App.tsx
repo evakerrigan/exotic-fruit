@@ -20,16 +20,17 @@ import { Route, Routes } from "react-router-dom";
 import categoriesData from "./json/category.json";
 
 import { initialBasketState } from "src/constants";
-import { TempAny, BasketState, ProductDTO } from "src/types";
+import { BasketState } from "./types/states/BasketState";
+import { ProductDto } from "./types/dto/ProductDto";
 
 export default function App() {
 
   const [basket, setBasket] = useState<BasketState>(initialBasketState);
 
-  const addProductToBasket = (productId: ProductDTO['id']) => {
+  const addProductToBasket = (productId: ProductDto['id']) => {
     console.log("ткнули на плюс, productId =", productId);
 
-    const initProductCount: TempAny = basket.products[productId] || 0;
+    const initProductCount: number = basket.products[productId] || 0;
     setBasket({
       ...basket,
       products: {
@@ -40,10 +41,10 @@ export default function App() {
     console.log("basket =", basket);
   };
 
-  const removeProductToBasket = (productId: ProductDTO['id']) => {
+  const removeProductToBasket = (productId: ProductDto['id']) => {
     console.log("ткнули на минус, productId =", productId);
 
-    const initProductCount: TempAny = basket.products[productId] || 0;
+    const initProductCount: number = basket.products[productId] || 0;
     setBasket({
       ...basket,
       products: {
@@ -56,7 +57,6 @@ export default function App() {
 
   return (
     <div className="App">
-      {/* <button onClick={() => addProductToBasket(3)} >++++</button> */}
       <div className="wrapper-app">
         <Header />
         <NavBar />

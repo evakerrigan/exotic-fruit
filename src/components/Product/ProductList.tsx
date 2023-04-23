@@ -2,11 +2,12 @@ import "./Product.css";
 import { NavLink } from "react-router-dom";
 import { ProductItem } from "./ProductItem";
 import { BasketProduct, BasketProductProps } from "../Basket/BasketProduct/BasketProduct";
-import { BasketState, ProductDTO } from "src/types";
+import { ProductDto } from "src/types/dto/ProductDto";
+import { BasketState } from "src/types/states/BasketState";
 
 interface ProductListProps {
   basket: BasketState;
-  products: ProductDTO[];
+  products: ProductDto[];
   removeProductToBasket: BasketProductProps['removeProduct'];
   addProductToBasket: BasketProductProps['addProduct'];
 }

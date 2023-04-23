@@ -1,11 +1,12 @@
-import { ProductDTO } from "src/types";
+import React from "react";
+import { ProductDto } from "../../../types/dto/ProductDto";
 import "./BasketProduct.css";
 
 export interface BasketProductProps {
-  productId: ProductDTO['id'];
+  productId: ProductDto['id'];
   productCount?: number;
-  removeProduct: (productId: ProductDTO['id']) => void;
-  addProduct: (productId: ProductDTO['id']) => void;
+  removeProduct: (productId: ProductDto['id']) => void;
+  addProduct: (productId: ProductDto['id']) => void;
 }
 
 export const BasketProduct = ({
@@ -16,7 +17,6 @@ export const BasketProduct = ({
 }: BasketProductProps) => {
   return (
     <div>
-      {/* <button onClick={() => addProductToBasket(productId)} className="basket-product">+</button> */}
       <div className="basket-product-wrapper">
         <div className="">
           <button
@@ -27,18 +27,7 @@ export const BasketProduct = ({
             -
           </button>
         </div>
-        {/* <input
-          placeholder="0"
-          type="text"
-          name=""
-          defaultValue="0"
-          id=""
-          className="basket-product-input"
-          readOnly
-        /> */}
         <span>{productCount || 0}</span>
-
-
         <div className="">
           <button
             className="basket-product-button"
